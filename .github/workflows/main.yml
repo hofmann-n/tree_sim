@@ -7,6 +7,10 @@ jobs:
     name: Check
     runs-on: ubuntu-latest
     steps:
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install libasound2-dev libudev-dev pkg-config libsdl2-dev
       - uses: actions/checkout@v1
       - uses: actions-rs/toolchain@v1
         with:
