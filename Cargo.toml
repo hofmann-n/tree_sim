@@ -1,5 +1,5 @@
 [package]
-name = "treeSim"
+name = "tree_sim"
 version = "0.1.0"
 authors = ["Niklas Hofmann <git@nhofmann.ch>"]
 edition = "2018"
@@ -7,3 +7,10 @@ edition = "2018"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+ggez = "*"
+
+gfx_core = "*"
+gfx_device_gl = "*"
+
+imgui = "*"
+imgui-gfx-renderer = "*"
